@@ -150,7 +150,7 @@ set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 function! Browser ()
    let line = getline (".")
    let line = matchstr (line, "http[^   ]*")
-   exec "!konqueror ".line
+   exec "!/usr/bin/open -a '/Applications/Google Chrome.app' ".line
 endfunction
 
 "}}}
