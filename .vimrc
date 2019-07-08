@@ -17,9 +17,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'valloric/youcompleteme'
 Plugin 'taglist.vim'
-Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -134,7 +132,6 @@ highlight MatchParen ctermbg=4
 
 " Color scheme settings
 syntax enable
-set background=dark
 colorscheme solarized
 
 "Status line gnarliness
@@ -207,10 +204,6 @@ set pastetoggle=<F2>
 " Open the TagList Plugin <F3>
 nnoremap <silent> <F3> :TlistToggle<CR>
 
-" New Tab
-nnoremap <silent> <C-t> :tabnew<CR>
-nnoremap <silent> <C-w> :tabclose<CR>
-
 " DOS is for fools.
 nnoremap <silent> <F9> :%s/$//g<CR>:%s// /g<CR>
 
@@ -230,17 +223,4 @@ let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_SingleClick = 1
 let Tlist_Inc_Winwidth = 0
-"}}}
-
-"{{{Syntastic configuration
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_w = 1
-let g:syntastic_check_on_wq = 0
-let g:loaded_syntastic_java_javac_checker = 1
 "}}}
