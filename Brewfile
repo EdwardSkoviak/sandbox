@@ -17,7 +17,7 @@ cask 'iterm2'
 
 # Install rbenv a ruby manager for installing/running ruby
 brew 'ruby-build' # ruby-build is needed by rbenv
-brew 'rbenv
+brew 'rbenv'
 
 # Node.js version manager
 brew 'nvm'
@@ -38,3 +38,4 @@ cask 'evernote'
 cask 'spotify'
 cask 'lastpass'
 cask 'flycut'
+brew 'lastpass-cli'
