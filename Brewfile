@@ -6,7 +6,9 @@ brew 'jq'
 brew 'git'
 
 # Docker
-brew 'boot2docker'
+# not needed?: brew 'docker-machine'
+#              brew 'docker'
+cask 'docker'
 
 # Virtualization software
 cask 'virtualbox'
