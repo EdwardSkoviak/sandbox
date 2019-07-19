@@ -4,6 +4,7 @@ brew 'jq'
 
 # Updates git to latest
 brew 'git'
+cask 'github' #github-desktop
 
 # Docker
 # not needed?: brew 'docker-machine'
