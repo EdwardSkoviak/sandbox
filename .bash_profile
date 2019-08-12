@@ -2,12 +2,17 @@
 
 # Invokes AWS login and sets AWS_PROFILE value.
 aws_setup() {
-  profile=$1
+  cliprofile=$1
+  profile=$2
+  role=$3
+  password=`lpass show --password corporate`
 
   awscli_setup \
     --username=$USER \
-    --cliprofile=$profile \
-    --profile=$profile
+    --cliprofile=$cliprofile \
+    --profile=$profile \
+    --role=$role \
+    --password=$password
 
   export AWS_PROFILE=$1
 }
@@ -47,3 +52,5 @@ export GO_POST_PROCESS_FILE="/usr/local/bin/gofmt -w"
 
 # Miscellaneous
 export EDITOR=vim
+
+export PATH="/Applications/HPE_Security/Fortify_SCA_and_Apps_17.20/bin:$PATH"
