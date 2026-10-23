@@ -1,44 +1,8 @@
-# Command-line tools
-brew 'wget'
-brew 'jq'
+brew "gh"
+cask "github-copilot-app"
+cask "copilot-cli"
 
-# Updates git to latest
-brew 'git'
-cask 'github' #github-desktop
+cask "obsidian"
 
-# Docker
-# not needed?: brew 'docker-machine'
-#              brew 'docker'
-cask 'docker'
-
-# Virtualization software
-cask 'virtualbox'
-cask 'vagrant'
-
-# Terminal replacement
-cask 'iterm2'
-
-# Install rbenv a ruby manager for installing/running ruby
-brew 'ruby-build' # ruby-build is needed by rbenv
-brew 'rbenv'
-
-# Node.js version manager
-brew 'nvm'
-
-# Development tools
-cask 'visual-studio-code'
-brew 'vim'
-
-# Java Development Tools
-cask 'intellij-idea-ce'
-cask 'visualvm'
-
-# Browsers
-cask 'google-chrome'
-
-# Personal items
-cask 'evernote'
-cask 'spotify'
-cask 'lastpass'
-cask 'flycut'
-brew 'lastpass-cli'
+cask "yt-music"
+#cask "ytmdesktop-youtube-music"
