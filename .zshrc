@@ -18,3 +18,5 @@ SAVEHIST=10000
 setopt appendhistory
 
 bindkey "^R" history-incremental-search-backward
+
+alias gitpersonal='git config user.email "edward.skoviak@gmail.com"; git config user.name "Edward '"'"'Cole'"'"' Skoviak"'
